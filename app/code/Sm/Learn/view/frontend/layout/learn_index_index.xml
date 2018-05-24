@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <referenceContainer name="page.messages">
+        <block
+                name="lean.main.validation-messages"
+                class="Sm\Learn\Block\ValidationMessages"/>
+    </referenceContainer>
+    <referenceContainer name="content">
+        <block name="lean.main" class="Sm\Learn\Block\Main" template="learn.phtml">
+            <container name="learn.main.container.item1" as="item1" >
+                <block name="learn.main.item1.block1" class="Sm\Learn\Block\Main" template="learn/item1.phtml"/>
+            </container>
+            <container name="learn.main.container.item2" as="item2" >
+                <block name="learn.main.item2.block1" class="Sm\Learn\Block\Main" template="learn/item2.phtml"/>
+            </container>
+        </block>
+    </referenceContainer>
+</page>

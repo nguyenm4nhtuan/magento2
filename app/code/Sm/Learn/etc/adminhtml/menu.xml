@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Sm_Learn::main" title="Learn Sm" translate="title" module="Sm_Learn" sortOrder="30" resource="Magento_Indexer::index"/>
+        <add id="Sm_Learn::lesson_one" title="Lesson One" translate="title" module="Sm_Learn" sortOrder="30" action="indexer/indexer/list" parent="Sm_Learn::main" resource="Magento_Indexer::index"/>
+    </menu>
+</config>
